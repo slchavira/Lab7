@@ -1,0 +1,111 @@
+import conversions
+
+# Constants for the rows and cols.
+ROWS = 12
+COLS = 2
+
+def main():
+    # Create a table using a 2-d list that stores a Fahrenheit
+    # temperature and the equivalent Celsius temperature.
+    temps_list = [[-10, format(conversions.FahToCel(-10), '.1f')],
+                  [0, format(conversions.FahToCel(0), '.1f')],
+                  [10, format(conversions.FahToCel(10), '.1f')],
+                  [20, format(conversions.FahToCel(20), '.1f')],
+                  [30, format(conversions.FahToCel(30), '.1f')],
+                  [40, format(conversions.FahToCel(40), '.1f')],
+                  [50, format(conversions.FahToCel(50), '.1f')],
+                  [60, format(conversions.FahToCel(60), '.1f')],
+                  [70, format(conversions.FahToCel(70), '.1f')],
+                  [80, format(conversions.FahToCel(80), '.1f')],
+                  [90, format(conversions.FahToCel(90), '.1f')],
+                  [100, format(conversions.FahToCel(100), '.1f')]]
+
+    print()
+    print('Fahrenehit to Celsius Conversion List')
+    print()
+
+    for r in range(ROWS):
+        print('\t', temps_list[r][0], temps_list[r][1], sep='\t\t' )
+
+    # Create a table for miles to km conversion
+    miles_list = [[0, format(conversions.milesToKm(0), '.2f')],
+                  [10, format(conversions.milesToKm(10), '.2f')],
+                  [20, format(conversions.milesToKm(20), '.2f')],
+                  [30, format(conversions.milesToKm(30), '.2f')],
+                  [40, format(conversions.milesToKm(40), '.2f')],
+                  [50, format(conversions.milesToKm(50), '.2f')],
+                  [60, format(conversions.milesToKm(60), '.2f')],
+                  [70, format(conversions.milesToKm(70), '.2f')],
+                  [80, format(conversions.milesToKm(80), '.2f')],
+                  [90, format(conversions.milesToKm(90), '.2f')],
+                  [100,format(conversions.milesToKm(100), '.2f')]]
+
+    print()
+    print('Miles to Kilometer Conversion List')
+    print()
+
+    for r in range(11):
+        print('\t', miles_list[r][0], miles_list[r][1], sep='\t\t')
+
+    # Create a table for gallons to liters conversion.
+    gal_list = [[0, format(conversions.GalToLit(10), '.2f')],
+                  [10, format(conversions.GalToLit(10), '.2f')],
+                  [20, format(conversions.GalToLit(20), '.2f')],
+                  [30, format(conversions.GalToLit(30), '.2f')],
+                  [40, format(conversions.GalToLit(40), '.2f')],
+                  [50, format(conversions.GalToLit(50), '.2f')],
+                  [60, format(conversions.GalToLit(60), '.2f')],
+                  [70, format(conversions.GalToLit(70), '.2f')],
+                  [80, format(conversions.GalToLit(80), '.2f')],
+                  [90, format(conversions.GalToLit(90), '.2f')],
+                  [100,format(conversions.GalToLit(100), '.2f')]]
+
+    print()
+    print('Gallons to Liters Conversion List')
+    print()
+
+    for r in range(11):
+        print('\t', gal_list[r][0], gal_list[r][1], sep='\t\t')
+
+    # Create a table for pounds to kg conversion.
+    pounds_list = [[0, format(conversions.PoundsToKg(0), '.2f')],
+                [10, format(conversions.PoundsToKg(10), '.2f')],
+                [20, format(conversions.PoundsToKg(20), '.2f')],
+                [30, format(conversions.PoundsToKg(30), '.2f')],
+                [40, format(conversions.PoundsToKg(40), '.2f')],
+                [50, format(conversions.PoundsToKg(50), '.2f')],
+                [60, format(conversions.PoundsToKg(60), '.2f')],
+                [70, format(conversions.PoundsToKg(70), '.2f')],
+                [80, format(conversions.PoundsToKg(80), '.2f')],
+                [90, format(conversions.PoundsToKg(90), '.2f')],
+                [100, format(conversions.PoundsToKg(100), '.2f')]]
+
+    print()
+    print('Pounds to Kilogram Conversion List')
+    print()
+
+    for r in range(11):
+        print('\t', pounds_list[r][0], pounds_list[r][1], sep='\t\t')
+
+    # Create a table for Inches to CM conversion.
+    inches_list = [[0, format(conversions.InchesToCm(0), '.2f')],
+                [10, format(conversions.InchesToCm(10), '.2f')],
+                [20, format(conversions.InchesToCm(20), '.2f')],
+                [30, format(conversions.InchesToCm(30), '.2f')],
+                [40, format(conversions.InchesToCm(40), '.2f')],
+                [50, format(conversions.InchesToCm(50), '.2f')],
+                [60, format(conversions.InchesToCm(60), '.2f')],
+                [70, format(conversions.InchesToCm(70), '.2f')],
+                [80, format(conversions.InchesToCm(80), '.2f')],
+                [90, format(conversions.InchesToCm(90), '.2f')],
+                [100, format(conversions.InchesToCm(100), '.2f')]]
+
+    print()
+    print('Inches to Centimeter Conversion List')
+    print()
+
+    for r in range(11):
+        print('\t', inches_list[r][0], inches_list[r][1], sep='\t\t')
+
+# Call main function.
+main()
